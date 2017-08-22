@@ -35,11 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mButton,mBtnSend;
     private ImageView volume,mSendVoice,img1,sc_img1;
     private RelativeLayout mBottom;
-    private TextView mTextView,mBtnRcd;
-    private AudioRecoderUtils mAudioRecoderUtils;
+    private TextView mBtnRcd;
     private Context context;
-    private PopupWindowFactory mPop;
-    private RelativeLayout rl;
     private LinearLayout del_re;
     private LinearLayout voice_rcd_hint_loading, voice_rcd_hint_rcding,
             voice_rcd_hint_tooshort;
@@ -104,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initWidget() {
         mListView = (ListView) findViewById(R.id.listview);
-        rl = (RelativeLayout) findViewById(R.id.rl);
         mSendVoice= (ImageView) findViewById(R.id.ivPopUp);
         mBottom = (RelativeLayout) findViewById(R.id.btn_bottom);
         mBtnRcd = (TextView) findViewById(R.id.btn_rcd);
